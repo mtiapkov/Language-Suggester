@@ -34,5 +34,10 @@ $(document).ready(function () {
     } else {
       $("#result").html("<p>Your coding language is Ruby</p>")
     }
+    
   })  
 })
+
+// $("submit").click(function(event){
+//   $("#result").fadeIn();
+// })
