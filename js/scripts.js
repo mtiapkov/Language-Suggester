@@ -5,16 +5,15 @@ function javaScript (num1, num2, num3) {
   }
 }
 function Python (num1, num2, num3) {
-  if (Math.round((num1, num2, num3)/3) === 2){
+  if (Math.round((num1 + num2 + num3)/3) === 2){
     return true
   }
 }
 function cSharp (num1, num2, num3) {
-  if (Math.round((num1, num2, num3)/3)=== 3){
+  if (Math.round((num1 + num2 + num3)/3)=== 3){
     return true
   }
 }
-
 
 //User Interface Logic
 $(document).ready(function () {
@@ -32,6 +31,9 @@ $(document).ready(function () {
       $("#result").html("<p>Your coding language is Python</p>");
     } else if (cSharp(mealInput, campingInput, companyInput, petInput, deviceInput)){
       $("#result").html("<p>Your coding language is C#</p>");
-    };  
+    } else {
+      $("#result").html("<p>Your coding language is Ruby</p>")
+    }
   })  
+
 })  
