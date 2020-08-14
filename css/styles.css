@@ -1,9 +1,27 @@
+body {
+  background-color: rgb(29, 53, 86);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.jumbotron {
+  background-color: rgb(168, 218, 220);
+  margin: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 5px solid rgb(69, 12, 157);
+  border-style: double;
+}
+
+.card {
+  margin:12px;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: rgb(168, 218, 220);
+  border: 5px solid rgb(69, 12, 157);
+  border-style: double;
+}
+
 .form-control {
   width: 15vw
 }
 
-body {
-  background-color: rgb (29, 53, 86);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
-}
