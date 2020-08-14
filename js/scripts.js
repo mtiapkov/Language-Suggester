@@ -35,5 +35,4 @@ $(document).ready(function () {
       $("#result").html("<p>Your coding language is Ruby</p>")
     }
   })  
-
 })  

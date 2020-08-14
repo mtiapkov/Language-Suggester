@@ -2,3 +2,8 @@
   width: 15vw
 }
 
+body {
+  background-color: rgb (29, 53, 86);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
