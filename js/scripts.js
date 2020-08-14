@@ -17,19 +17,21 @@ function cSharp (num1, num2, num3) {
 
 
 //User Interface Logic
-$("#questionsForm").submit(function(event) {
-  event.preventDefault();
-  const mealInput = parseInt($("#meal").val());
-  const campingInput = parseInt($("#camping").val());
-  const companyInput = parseInt($("#company").val());
-  const petInput = parseInt($("#pet").val());
-  const deviceInput = parseInt($("#device").val());
+$(document).ready(function () {
+  $("#questionsForm").submit(function (event) {
+    event.preventDefault();
+    const mealInput = parseInt($("#meal").val());
+    const campingInput = parseInt($("#camping").val());
+    const companyInput = parseInt($("#company").val());
+    const petInput = parseInt($("#pet").val());
+    const deviceInput = parseInt($("#device").val());
 
-  if(javaScript(mealInput, campingInput, companyInput, petInput, deviceInput)){
-    $(".result").html("<p>Your coding language is JavaScript</p>");
-  } else if (Python(mealInput, campingInput, companyInput, petInput, deviceInput)){
-    $(".result").html("<p>Your coding language is Python</p>");
-  } else if (cSharp(mealInput, campingInput, companyInput, petInput, deviceInput))
-    $(".result").html("<p>Your coding language is C#</p>");
-
-})
+    if(javaScript(mealInput, campingInput, companyInput, petInput, deviceInput)){
+      $("#result").html("<p>Your coding language is JavaScript</p>");
+    } else if (Python(mealInput, campingInput, companyInput, petInput, deviceInput)){
+      $("#result").html("<p>Your coding language is Python</p>");
+    } else if (cSharp(mealInput, campingInput, companyInput, petInput, deviceInput)){
+      $("#result").html("<p>Your coding language is C#</p>");
+    };  
+  })  
+})  
