@@ -1,16 +1,16 @@
 //Business Logic
 function javaScript (num1, num2, num3) {
-  if (Math.round((num1 + num2 + num3 + num4 + num5)/5) === 1){
+  if (Math.round((num1 + num2 + num3)/3) === 1){
     return true
   }
 }
 function Python (num1, num2, num3) {
-  if (Math.round((num1 + num2 + num3 + num4 + num5)/5) === 2){
+  if (Math.round((num1 + num2 + num3)/3) === 2){
     return true
   }
 }
 function cSharp (num1, num2, num3) {
-  if (Math.round((num1 + num2 + num3 + num4 + num5)/5)=== 3){
+  if (Math.round((num1 + num2 + num3)/3)=== 3){
     return true
   }
 }
@@ -25,11 +25,11 @@ $(document).ready(function () {
     const petInput = parseInt($("#pet").val());
     const deviceInput = parseInt($("#device").val());
 
-    if(javaScript(mealInput, campingInput, companyInput, petInput, deviceInput)){
+    if(javaScript(mealInput, campingInput, companyInput)){
       $("#result").html("<p>Your coding language is JavaScript</p>");
-    } else if (Python(mealInput, campingInput, companyInput, petInput, deviceInput)){
+    } else if (Python(mealInput, campingInput, companyInput)){
       $("#result").html("<p>Your coding language is Python</p>");
-    } else if (cSharp(mealInput, campingInput, companyInput, petInput, deviceInput)){
+    } else if (cSharp(mealInput, campingInput, companyInput)){
       $("#result").html("<p>Your coding language is C#</p>");
     } else {
       $("#result").html("<p>Your coding language is Ruby</p>")
@@ -37,7 +37,3 @@ $(document).ready(function () {
     
   })  
 })
-
-// $("submit").click(function(event){
-//   $("#result").fadeIn();
-// })
